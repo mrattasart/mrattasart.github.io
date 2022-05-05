@@ -29,17 +29,16 @@
       heap.load("479574731");
     </script>
 
-    <script src="https://daosurv.hellonext.co/widget.js"></script>
+    <!-- <script src="https://daosurv.hellonext.co/widget.js"></script>
     <script>
       HNWidget.init({
         token: "C8noTbuAeL0UlcVyHOhAeg",
-        jwtToken: "JWT TOKEN CREATED WITH SSO KEY", // Optional: This token allows the widget to uniquely identify your user. Without the token, the user will have to enter his email to submit a post.
         selector: "#widgetID", // Optional: Widget will open up when this element is clicked
         placement: "right", // Optional: Placement of the element when selector is used
-        showOnlySubmission: false, // Optional: Toggle for showing only submission form
-        bucketId: "9404", // Optional: This will render only selected bucket in the widget
       });
-    </script>
+    </script> -->
+
+    
   
 </head>
 <body>
@@ -59,6 +58,20 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <button class="superbutton-big" id="widgetID">Click to trigger widget</button>
+    
+    <div data-hellonext></div>
+    <script src='https://daosurv.hellonext.co/embed.js'></script>
+    <script>
+      hellonext.init({
+        embedURL: 'https://daosurv.hellonext.co/embed/b/feedback',
+        ssoToken: 'GENERATED_JWT_TOKEN',
+        height: '100%',
+        width: '100%',
+        selector: 'SELECTOR' // Optional: Embed will be loaded in this selector
+      });
+    </script>
+    
+    
 
 </body>
 </html>
